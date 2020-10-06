@@ -15,4 +15,6 @@ public interface IToDoItemService {
     List<ToDoItem> getToDoItems();
     void deleteToDoItemById(long Id);
     ToDoItem updateToDoItem(ToDoItem toDoItem);
+
+    List<ToDoItem> getToDoItemsByUserId(long id);
 }

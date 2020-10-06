@@ -21,7 +21,7 @@ public class ToDoItem {
     @Column(nullable = false)
     private boolean isCompleted;
 
-    @JsonIgnore
+
     @ManyToOne
     private User user;
 

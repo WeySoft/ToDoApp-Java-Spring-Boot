@@ -26,17 +26,13 @@ public class User {
     private String username;
 
     private Date birthdate;
-
-    @JsonIgnore
-    @OneToMany
-    private Set<ToDoItem> items;
+    private String token;
 
     @Column(nullable = false)
     private String password;
     @JsonIgnore
     private String salt;
-    @Column(nullable = false)
-    private String token;
+
 
     public String getToken() {
         return token;
@@ -48,10 +44,6 @@ public class User {
 
     public long getId() {
         return id;
-    }
-
-    public Set<ToDoItem> getItems() {
-        return items;
     }
 
     public String getPassword() {

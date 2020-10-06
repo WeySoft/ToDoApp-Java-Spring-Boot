@@ -12,5 +12,5 @@ public interface IUserService {
     User updateUser(User user);
     void deleteUserById(long id);
     
-    List<ToDoItem> getToDoItemsByUserId(long id);
+
 }

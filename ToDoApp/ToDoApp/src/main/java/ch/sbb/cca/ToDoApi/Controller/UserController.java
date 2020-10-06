@@ -40,15 +40,5 @@ public class UserController {
         }
     }
 
-    @CrossOrigin
-    @GetMapping("/todoitems/user/{id}")
-    public ResponseEntity<List<ToDoItem>> getToDoItemByUserId(@PathVariable long id){
-        List<ToDoItem> items = userService.getToDoItemsByUserId(id);
-        if (items == null){
-            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-        }
-        else{
-            return new ResponseEntity<>(items, HttpStatus.OK);
-        }
-    }
+
 }

@@ -42,6 +42,18 @@ public class ToDoItemController {
     }
 
     @CrossOrigin
+    @GetMapping("/user/{id}")
+    public ResponseEntity<List<ToDoItem>> getToDoItemByUserId(@PathVariable long id){
+        List<ToDoItem> items = service.getToDoItemsByUserId(id);
+        if (items == null){
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+        else{
+            return new ResponseEntity<>(items, HttpStatus.OK);
+        }
+    }
+
+    @CrossOrigin
     @PostMapping()
     public ResponseEntity<ToDoItem> createToDoItem(@Validated @RequestBody ToDoItem toDoItem){
         ToDoItem toDoItem1 = service.createToDoItem(toDoItem);

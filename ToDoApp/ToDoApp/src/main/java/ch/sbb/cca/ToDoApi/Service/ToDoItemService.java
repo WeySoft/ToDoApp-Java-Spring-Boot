@@ -1,10 +1,12 @@
 package ch.sbb.cca.ToDoApi.Service;
 
 import ch.sbb.cca.ToDoApi.Model.ToDoItem;
+import ch.sbb.cca.ToDoApi.Model.User;
 import ch.sbb.cca.ToDoApi.Repository.ToDoItemRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -12,6 +14,9 @@ import java.util.Optional;
 public class ToDoItemService implements IToDoItemService {
     @Autowired
     private ToDoItemRepository toDoItemRepository;
+
+    @Autowired
+    private UserService userService;
     
     @Override
     public ToDoItem createToDoItem(ToDoItem toDoItem) {
@@ -45,6 +50,19 @@ public class ToDoItemService implements IToDoItemService {
             return toDoItemRepository.save(toDoItem1);
         }
 
+    }
+
+    @Override
+    public List<ToDoItem> getToDoItemsByUserId(long id) {
+        User user = userService.getUserById(id);
+        List<ToDoItem> allItems = getToDoItems();
+        List<ToDoItem> items  = new ArrayList<>();
+        for (ToDoItem item: allItems){
+            if (item.getUser() == user){
+                items.add(item);
+            }
+        }
+        return items;
     }
     
 }

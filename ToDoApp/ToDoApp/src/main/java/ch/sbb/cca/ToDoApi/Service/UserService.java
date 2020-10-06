@@ -14,6 +14,8 @@ public class UserService implements IUserService {
     @Autowired
     private UserRepository userRepository;
 
+
+
     @Override
     public User getUserById(long id) {
         return userRepository.findById(id).orElse(null);
@@ -48,16 +50,5 @@ public class UserService implements IUserService {
         userRepository.deleteById(id);
     }
 
-    @Override
-    public List<ToDoItem> getToDoItemsByUserId(long id) {
-        User user = getUserById(id);
-        List<ToDoItem> items = new ArrayList<>();
-        if (user==null){
-            return null;
-        }
-        for(ToDoItem item: user.getItems()){
-            items.add(item);
-        }
-        return items;
-    }
+
 }
