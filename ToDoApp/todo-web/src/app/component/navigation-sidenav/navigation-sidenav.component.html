@@ -1,0 +1,22 @@
+<mat-nav-list>
+  <ng-container *ngIf="currentUser">
+    <a mat-list-item routerLink="/" (click)="onSidenavClose()">
+      <mat-icon>assignment</mat-icon>
+      <span class="nav-caption">To Do</span>
+    </a>
+    <a mat-list-item routerLink="/profile" (click)="onSidenavClose()">
+      <mat-icon>account_box</mat-icon>
+      <span class="nav-caption">Profile</span>
+    </a>
+  </ng-container>
+  <a mat-list-item (click)="onSidenavClose(); logout()">
+      <ng-container *ngIf="!currentUser">
+          <mat-icon>power_settings_new</mat-icon>
+          <span class nav-caption>Login</span>
+      </ng-container>
+      <ng-container *ngIf="currentUser">
+        <mat-icon>power_settings_new</mat-icon>
+        <span class nav-caption>Logout</span>
+    </ng-container>
+  </a>
+</mat-nav-list>

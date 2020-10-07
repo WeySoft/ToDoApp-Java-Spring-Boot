@@ -1,0 +1,28 @@
+<div fxLayout="row" fxLayoutAlign="center center">
+    <mat-card>
+        <form class="login-form" fxLayout="column" fxLayoutAlign="space-around center" #registerUserForm="ngForm" [formGroup]="registerUserFormGroup" (ngSubmit)="registerUser()">
+            <mat-form-field>
+                <mat-label>Benutzername</mat-label>
+                <input name="username" matInput placeholder="Benutzername" formControlName="username" required>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Vorname</mat-label>
+                <input name="firstname" matInput placeholder="Vorname" formControlName="firstName" required>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Nachname</mat-label>
+                <input name="lastname" matInput placeholder="Nachname" formControlName="lastName"  required>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Passwort</mat-label>
+                <input name="password" matInput placeholder="Passwort" type="password" formControlName="password" required>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Passwort Wiederholen</mat-label>
+                <input name="passwordRepeat" matInput placeholder="Passwort Wiederholen" type="password" formControlName="passwordRepeat"  required>
+            </mat-form-field>
+            <button mat-raised-button color="primary" type="submit" [disabled]="registerUserFormGroup.invalid">Registerieren</button>
+        <button mat-raised-button color="secondary" routerLink="/login">Abrechen</button>
+        </form>
+    </mat-card>
+</div>
