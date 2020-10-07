@@ -22,7 +22,8 @@ public class User {
     private String firstname;
     @Column(nullable = false)
     private String lastname;
-    @Column(nullable = false)
+
+    @Column(unique = true, nullable = false)
     private String username;
 
     private Date birthdate;

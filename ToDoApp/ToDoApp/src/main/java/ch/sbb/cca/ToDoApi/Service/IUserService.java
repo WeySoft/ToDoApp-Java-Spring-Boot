@@ -11,6 +11,8 @@ public interface IUserService {
     User createUser(User user);
     User updateUser(User user);
     void deleteUserById(long id);
+
+    boolean checkIfUsernameisAlreadyTaken(String name);
     
 
 }
