@@ -1,6 +1,5 @@
 package ch.sbb.cca.ToDoApi.Service;
 
-import ch.sbb.cca.ToDoApi.Model.ToDoItem;
 import ch.sbb.cca.ToDoApi.Model.User;
 import ch.sbb.cca.ToDoApi.Repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,7 +7,6 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -43,7 +41,7 @@ public class UserService implements IUserService {
     @Override
     public User updateUser(User user) {
         User user1 = getUserById(user.getId());
-        if (user1 == null){
+        if (user1 == null) {
             return null;
         }
         if (checkIfUsernameisAlreadyTaken(user.getUsername())) {
@@ -66,18 +64,11 @@ public class UserService implements IUserService {
     @Override
     public boolean checkIfUsernameisAlreadyTaken(String name) {
         List<User> users = getUsers();
-        for (User u: users){
-            if (u.getUsername().equals(name)){
+        for (User u : users) {
+            if (u.getUsername().equals(name)) {
                 return true;
             }
         }
         return false;
     }
-
-    @Bean
-    public BCryptPasswordEncoder bCryptPasswordEncoder() {
-        return new BCryptPasswordEncoder();
-    }
-
-
 }
