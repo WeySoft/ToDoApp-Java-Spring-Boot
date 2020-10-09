@@ -15,13 +15,7 @@ export class TodoComponent implements OnInit {
 
 
   constructor() {
-    this.user.email = "adsf@afds.ch";
-    this.user.firstName ="joe";
-    this.user.id = 1;
-    this.user.lastName ="biden";
-    this.user.password = "diniMüdä";
-    this.user.token =" adflkajsfölaksjflksafjsfkjslfjslfkjsfl";
-    this.user.username ="werni082";
+    this.sortToDoItems;
   }
 
   createNewToDoItem(){

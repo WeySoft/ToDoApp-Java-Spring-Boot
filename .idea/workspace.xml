@@ -5,36 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d272f700-fa75-46d6-b2ea-d94e12bdb121" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToDoApp/ToDoApp/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/ToDoApp/ToDo.Api/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToDoApp/ToDoApp/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/ToDoApp/ToDo.Api/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToDoApp/ToDoApp/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/ToDoApp/ToDo.Api/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToDoApp/ToDoApp/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ToDoApp/ToDo.Api/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToDoApp/ToDoApp/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/ToDoApp/ToDo.Api/mvnw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToDoApp/ToDoApp/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/ToDoApp/ToDo.Api/mvnw.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToDoApp/ToDoApp/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ToDoApp/ToDo.Api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToDoApp/ToDoApp/src/main/java/ch/sbb/cca/ToDoApi/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/ToDoApp/ToDo.Api/src/main/java/ch/sbb/cca/ToDoApi/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToDoApp/ToDoApp/src/main/java/ch/sbb/cca/ToDoApi/Controller/AuthenticationsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ToDoApp/ToDo.Api/src/main/java/ch/sbb/cca/ToDoApi/Controller/AuthenticationsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToDoApp/ToDoApp/src/main/java/ch/sbb/cca/ToDoApi/Controller/ToDoItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ToDoApp/ToDo.Api/src/main/java/ch/sbb/cca/ToDoApi/Controller/ToDoItemController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToDoApp/ToDoApp/src/main/java/ch/sbb/cca/ToDoApi/Controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ToDoApp/ToDo.Api/src/main/java/ch/sbb/cca/ToDoApi/Controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToDoApp/ToDoApp/src/main/java/ch/sbb/cca/ToDoApi/Model/AuthenticationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ToDoApp/ToDo.Api/src/main/java/ch/sbb/cca/ToDoApi/Model/AuthenticationRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToDoApp/ToDoApp/src/main/java/ch/sbb/cca/ToDoApi/Model/AuthenticationResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/ToDoApp/ToDo.Api/src/main/java/ch/sbb/cca/ToDoApi/Model/AuthenticationResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToDoApp/ToDoApp/src/main/java/ch/sbb/cca/ToDoApi/Model/ToDoItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/ToDoApp/ToDo.Api/src/main/java/ch/sbb/cca/ToDoApi/Model/ToDoItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToDoApp/ToDoApp/src/main/java/ch/sbb/cca/ToDoApi/Model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/ToDoApp/ToDo.Api/src/main/java/ch/sbb/cca/ToDoApi/Model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToDoApp/ToDoApp/src/main/java/ch/sbb/cca/ToDoApi/Repository/ToDoItemRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/ToDoApp/ToDo.Api/src/main/java/ch/sbb/cca/ToDoApi/Repository/ToDoItemRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToDoApp/ToDoApp/src/main/java/ch/sbb/cca/ToDoApi/Repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/ToDoApp/ToDo.Api/src/main/java/ch/sbb/cca/ToDoApi/Repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToDoApp/ToDoApp/src/main/java/ch/sbb/cca/ToDoApi/Security/SecurityConfigurer.java" beforeDir="false" afterPath="$PROJECT_DIR$/ToDoApp/ToDo.Api/src/main/java/ch/sbb/cca/ToDoApi/Security/SecurityConfigurer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToDoApp/ToDoApp/src/main/java/ch/sbb/cca/ToDoApi/Service/IToDoItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ToDoApp/ToDo.Api/src/main/java/ch/sbb/cca/ToDoApi/Service/IToDoItemService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToDoApp/ToDoApp/src/main/java/ch/sbb/cca/ToDoApi/Service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ToDoApp/ToDo.Api/src/main/java/ch/sbb/cca/ToDoApi/Service/IUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToDoApp/ToDoApp/src/main/java/ch/sbb/cca/ToDoApi/Service/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/ToDoApp/ToDo.Api/src/main/java/ch/sbb/cca/ToDoApi/Service/JwtUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToDoApp/ToDoApp/src/main/java/ch/sbb/cca/ToDoApi/Service/MyUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ToDoApp/ToDo.Api/src/main/java/ch/sbb/cca/ToDoApi/Service/MyUserDetailsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToDoApp/ToDoApp/src/main/java/ch/sbb/cca/ToDoApi/Service/ToDoItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ToDoApp/ToDo.Api/src/main/java/ch/sbb/cca/ToDoApi/Service/ToDoItemService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToDoApp/ToDoApp/src/main/java/ch/sbb/cca/ToDoApi/Service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ToDoApp/ToDo.Api/src/main/java/ch/sbb/cca/ToDoApi/Service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToDoApp/ToDoApp/src/main/java/ch/sbb/cca/ToDoApi/filters/JwtRequestFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/ToDoApp/ToDo.Api/src/main/java/ch/sbb/cca/ToDoApi/filters/JwtRequestFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToDoApp/ToDoApp/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ToDoApp/ToDo.Api/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToDoApp/ToDoApp/src/test/java/ch/sbb/cca/ToDoApi/ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/ToDoApp/ToDo.Api/src/test/java/ch/sbb/cca/ToDoApi/ApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToDoApp/my-app/src/app/components/todo/todo.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ToDoApp/my-app/src/app/components/todo/todo.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

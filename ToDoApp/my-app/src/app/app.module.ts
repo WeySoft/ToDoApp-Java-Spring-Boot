@@ -24,7 +24,10 @@ import { TodoComponent } from './components/todo/todo.component';
 import { TodoListComponent } from './components/todo-list/todo-list.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
-import { ToDoItem, User } from './model/models';
+
+// Services
+import { UserService } from './Service/UserService';
+import { ToDoItemService } from './Service/ToDoItemService';
 
 @NgModule({
   declarations: [
@@ -49,7 +52,7 @@ import { ToDoItem, User } from './model/models';
     MatButtonModule,
     MatIconModule
   ],
-  providers: [],
+  providers: [UserService, ToDoItemService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
