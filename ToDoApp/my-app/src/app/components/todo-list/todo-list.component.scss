@@ -1,0 +1,40 @@
+.example-card {
+  margin: auto;
+  max-width: 75%;
+  margin-bottom: 15px;
+}
+  
+.example-icon {
+  margin: 0 14px;
+}
+
+.example-icon:hover {
+    cursor: pointer;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.mat-toolbar {
+    margin-bottom: 10px;
+}
+.mat-toolbar-row {
+  white-space: normal;
+  word-break: break-word;
+  height: auto;
+}
+  
+@media (max-width: 950px) {
+  .example-card {
+  max-width: 100% !important;
+  padding-right: 0;
+  padding-left: 0;
+  margin: 0px;
+  margin-bottom: 16px;
+  }
+  .mat-card-content {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
