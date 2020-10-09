@@ -2,10 +2,12 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { User } from '../model/models';
 import { Observable } from 'rxjs';
- 
-@Injectable()
+
+@Injectable({
+  providedIn: 'root'
+})
 export class UserService {
-    protected basePath = 'http://localhost:8080/api/user';
+  protected basePath = 'http://localhost:8080/api/user';
  
     constructor(private http: HttpClient) {}
  

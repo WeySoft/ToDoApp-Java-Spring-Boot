@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { ToDoItem, User } from 'src/app/model/models';
+import { TodoItemsServiceService } from 'src/app/Service/todo-items-service.service';
 
 @Component({
   selector: "app-todo",
@@ -14,13 +15,12 @@ export class TodoComponent implements OnInit {
   allTodoItems: ToDoItem[] = [];
 
 
-  constructor() {
+  constructor(private _todoItemServie: TodoItemsServiceService){
     this.sortToDoItems;
   }
 
   createNewToDoItem(){
     if(this.newToDoItem.name){
-    this.newToDoItem.id = 1;
     this.newToDoItem.isCompleted = false;
     this.newToDoItem.user = this.user;
     console.log(this.newToDoItem, this.allTodoItems)

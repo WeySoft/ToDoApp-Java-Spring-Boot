@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
 
 //Material
 import {MatToolbarModule} from '@angular/material/toolbar';
@@ -25,9 +26,10 @@ import { TodoListComponent } from './components/todo-list/todo-list.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 
-// Services
-import { UserService } from './Service/UserService';
-import { ToDoItemService } from './Service/ToDoItemService';
+// Services;
+import { TodoItemsServiceService } from './Service/todo-items-service.service';
+import { UserService } from './Service/user.service';
+
 
 @NgModule({
   declarations: [
@@ -39,6 +41,7 @@ import { ToDoItemService } from './Service/ToDoItemService';
     RegisterComponent
   ],
   imports: [
+    HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
     FlexLayoutModule,
@@ -52,7 +55,7 @@ import { ToDoItemService } from './Service/ToDoItemService';
     MatButtonModule,
     MatIconModule
   ],
-  providers: [UserService, ToDoItemService],
+  providers: [TodoItemsServiceService, UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
